@@ -163,7 +163,7 @@ BpfHandler::BpfHandler(uint32_t perUidLimit, uint32_t totalLimit)
 
 Status BpfHandler::init(const char* cg2_path) {
     // Make sure BPF programs are loaded before doing anything
-    android::bpf::waitForProgsLoaded();
+    //android::bpf::waitForProgsLoaded();
     ALOGI("BPF programs are loaded");
 
     RETURN_IF_NOT_OK(initPrograms(cg2_path));
